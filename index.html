@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coming Wave</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-color: #f0f8ff; /* Lighter blue background */
+            color: #4b0082; /* Slightly darker purple text color */
+        }
+        h1 {
+            font-size: 3em;
+            color: #1c314e; /* Dark blue color */
+            text-align: center;
+            text-shadow: 0 0 10px #3498db, 0 0 20px #3498db, 0 0 30px #3498db;
+            animation: moveTitle 3s ease-in-out infinite, shine 2s infinite;
+            margin-top: 20px;
+            position: relative;
+            display: inline-block;
+        }
+        h1::after {
+            content: " 😝"; /* Add the emoji after the main title */
+            font-size: 1.2em;
+            margin-left: 10px;
+        }
+        @keyframes moveTitle {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+        @keyframes shine {
+            0% { text-shadow: 0 0 10px #3498db, 0 0 20px #3498db, 0 0 30px #3498db; }
+            50% { text-shadow: 0 0 20px #3498db, 0 0 30px #3498db, 0 0 40px #3498db; }
+            100% { text-shadow: 0 0 10px #3498db, 0 0 20px #3498db, 0 0 30px #3498db; }
+        }
+        img {
+            display: block;
+            margin: 60px auto 30px; /* Increased margin above and below the image */
+            max-width: 100%;
+            animation: floatImage 5s ease-in-out infinite;
+        }
+        @keyframes floatImage {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        blockquote {
+            background-color: #d6eaff; /* Slightly darker blue for blockquote */
+            border-left: 5px solid #3498db;
+            padding: 10px 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #4b0082; /* Slightly darker purple text color */
+        }
+        p {
+            margin: 10px 0;
+        }
+        h2 {
+            color: #2980b9; /* Blue color for chapter titles */
+            font-size: 1.5em;
+            margin-top: 30px;
+            text-transform: lowercase; /* Ensure all text is lowercase */
+            animation: moveChapterTitle 3s ease-in-out infinite, shineChapter 2s infinite;
+        }
+        h2::first-letter {
+            text-transform: uppercase; /* Capitalize only the first letter */
+        }
+        h2 span.chapter-marker {
+            font-size: 1.2em;
+            color: #2980b9;
+            display: inline;
+            font-style: italic;
+        }
+        @keyframes moveChapterTitle {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(10px);
+            }
+        }
+        @keyframes shineChapter {
+            0% { text-shadow: 0 0 10px #3498db, 0 0 20px #3498db, 0 0 30px #3498db; }
+            50% { text-shadow: 0 0 20px #3498db, 0 0 30px #3498db, 0 0 40px #3498db; }
+            100% { text-shadow: 0 0 10px #3498db, 0 0 20px #3498db, 0 0 30px #3498db; }
+        }
+        .arrow {
+            font-size: 1.2em;
+            color: #2980b9;
+            display: inline;
+            margin-left: 5px;
+        }
+        .author-name {
+            color: #2980b9; /* Blue color for the author's name */
+            font-size: 1.2em;
+            text-align: center;
+            margin-top: 30px; /* Increased margin between title and author name */
+            display: block;
+            animation: spin 5s linear infinite;
+            transform-origin: center; /* Ensure rotation happens around the center */
+        }
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>The Coming Wave</h1>
+    <div class="author-name">Carlota Ríos Broullón</div>
+    <img src="https://i.postimg.cc/pdcf0rVd/image.png" alt="Cover Image">
+
+    <h2><span class="chapter-marker">⚪ Chapter 1:</span> containment is not possible <span class="arrow">→</span></h2>
+    <blockquote>
+        "From where we stand today, it appears that containing this wave—that is, controlling, curbing, or even stopping it—is not possible. This book asks why that might be true and what it means if it is".
+    </blockquote>
+    <p>This excerpt introduces the central question of the book: Is it possible to contain the coming technological wave? The author argues that containment may not be possible, which raises serious implications.</p>
+
+    <h2><span class="chapter-marker">⚪ Chapter 2:</span> endless proliferation <span class="arrow">→</span></h2>
+    <blockquote>
+        "Society unfolds in concert with these leaps. We see it over and over; a new piece of technology, like the internal combustion engine, proliferates and transforms everything around it".
+    </blockquote>
+    <p>The proliferation of technology, exemplified by the internal combustion engine, transforms society, making containment an ongoing challenge.</p>
+
+    <h2><span class="chapter-marker">⚪ Chapter 3:</span> the containment problem <span class="arrow">→</span></h2>
+    <blockquote>
+        "Properly addressing this wave, containing technology, and ensuring that it always serves humanity means overcoming pessimism aversion. It means facing head-on the reality of what’s coming".
+    </blockquote>
+    <p>This excerpt highlights the difficulty of containing technology due to pessimism aversion and the need to confront the reality of future challenges.</p>
+
+    <h2><span class="chapter-marker">⚪ Chapter 4:</span> the technology of intelligence <span class="arrow">→</span></h2>
+    <blockquote>
+        "But highly capable learning systems, ACIs, that can pass some version of the Modern Turing Test? Make no mistake: they are on their way, are already here in embryonic form".
+    </blockquote>
+    <p>The rapid advancement of artificial intelligence, especially highly capable AI systems (ACIs), presents unprecedented challenges for containment.</p>
+
+    <h2><span class="chapter-marker">⚪ Chapter 5:</span> the technology of life <span class="arrow">→</span></h2>
+    <blockquote>
+        "Just as everything from the steam engine [...], the convergence of computation, automation, and biology will give us unprecedented influence over the fundamental building blocks of life".
+    </blockquote>
+    <p>Advances in synthetic biology and the convergence with other technologies are revolutionizing our ability to manipulate life, requiring careful consideration of risks and benefits.</p>
+
+    <h2><span class="chapter-marker">⚪ Chapter 6:</span> the wider wave <span class="arrow">→</span></h2>
+    <blockquote>
+        "While AI and synthetic biology are the coming wave’s central general-purpose technologies, a bundle of technologies with unusually powerful ramifications surrounds them, encompassing quantum computing, robotics, nanotechnology, and the potential for abundant energy, among others".
+    </blockquote>
+    <p>This excerpt expands the scope of the technological wave to include quantum computing, robotics, and other technologies, highlighting the interconnected nature of these advancements.</p>
+
+    <h2><span class="chapter-marker">⚪ Chapter 7:</span> four features of the coming wave <span class="arrow">→</span></h2>
+    <blockquote>
+        "Ultimately, in its most dramatic forms, the coming wave could mean humanity will no longer be at the top of the food chain. Homo technologicus may end up being threatened by its own creation".
+    </blockquote>
+    <p>This excerpt introduces four key features of the wave that make containment difficult: asymmetry, hyper-evolution, omni-use, and autonomy. These features represent unprecedented challenges for maintaining control over technology.</p>
+
+    <h2><span class="chapter-marker">⚪ Chapter 8:</span> unstoppable incentives <span class="arrow">→</span></h2>
+    <blockquote>
+        "Even days before its first public competition [...], the value of DeepMind leaped".
+    </blockquote>
+    <p>Economic and geopolitical forces drive technological development, making containment difficult due to incentives for innovation and competition.</p>
+
+    <h2><span class="chapter-marker">⚪ Chapter 9:</span> the grand bargain <span class="arrow">→</span></h2>
+    <blockquote>
+        "At its heart, the nation-state [...] offers its citizens a simple and highly persuasive bargain: that not only is centralization of power in the sovereign, territorial state possible but its benefits far outweigh the risks".
+    </blockquote>
+    <p>The concept of the "grand bargain" between nation-states and their citizens is under pressure due to new technologies, requiring a reevaluation of the state's role in managing technological risks and benefits.</p>
+
+    <h2><span class="chapter-marker">⚪ Chapter 10:</span> fragility amplifiers <span class="arrow">→</span></h2>
+    <blockquote>
+        "GAIN-OF-FUNCTION RESEARCH AND LAB leaks are just two particularly sharp examples of how the coming wave will introduce a plethora of revenge effects and inadvertent failure modes".
+    </blockquote>
+    <p>This excerpt explores how the technological wave can exacerbate existing fragilities in nation-states, such as cyber attacks, disinformation, and lab leaks, leading to instability and disorder.</p>
+
+    <h2><span class="chapter-marker">⚪ Chapter 11:</span> the future of nations <span class="arrow">→</span></h2>
+    <blockquote>
+        "The coming wave will force a set of tectonic shifts in power, both centralizing and decentralizing at the same time. This will create vast new enterprises, buttress authoritarianism, and yet also empower groups and movements to live outside traditional social structures".
+    </blockquote>
+    <p>The technological wave will transform the future of nation-states by reshaping power structures, leading to both centralization and decentralization, with implications for governance and social order.</p>
+
+    <h2><span class="chapter-marker">⚪ Chapter 12:</span> the dilemma <span class="arrow">→</span></h2>
+    <blockquote>
+        "The coming wave really is coming, but it hasn’t washed over us yet. While unstoppable incentives are locked in, the wave’s final form, the precise contours of the dilemma, are still to be decided".
+    </blockquote>
+    <p>The excerpt articulates the central dilemma of the book: balancing the benefits of technological innovation with the need to mitigate existential risks. This dilemma requires careful consideration and collective action.</p>
+
+    <h2><span class="chapter-marker">⚪ Chapter 13:</span> containment must be possible <span class="arrow">→</span></h2>
+    <blockquote>
+        "Containment of the coming wave is, I believe, not possible in our current world. What these steps might do, however, is change the underlying conditions. Nudge forward the status quo so containment has a chance".
+    </blockquote>
+    <p>This excerpt argues that while total containment may not be possible, steps can be taken to change underlying conditions and increase the chances of managing the risks of the technological wave.</p>
+
+    <h2><span class="chapter-marker">⚪ Chapter 14:</span> ten steps toward containment <span class="arrow">→</span></h2>
+    <blockquote>
+        "Each of the ideas outlined so far represents the beginning of a seawall, a tentative tidal barrier starting with the specifics of the technology itself and expanding outward to the imperative of forming a massive global movement for positive change".
+    </blockquote>
+    <p>This excerpt describes ten concrete steps that can be taken to promote containment, including technical security, audits, choke points, and the participation of responsible creators and companies.</p>
+</body>
+</html>
